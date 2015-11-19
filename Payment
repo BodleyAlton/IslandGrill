@@ -1,0 +1,27 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package IGGUI;
+
+/**
+ *
+ * @author AltonJr
+ */
+public class Payment {
+    
+    private float salePrice;
+    private float totalPrice;
+    
+    public float getSalePrice(Menu item)
+    {
+        return salePrice;
+    }
+    
+    public float totalPrice(float salePrice, int qty)
+    {
+        totalPrice=(salePrice*qty);
+        return totalPrice;
+    }
+}
