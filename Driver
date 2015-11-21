@@ -1,0 +1,52 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+package IGGUI;
+import java.awt.Component;
+import javax.swing.*;
+/**
+ *
+ * @author Richy
+ */
+public class Driver {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        JFrame IG = new JFrame("IG");
+        //JPanel co = new JPanel();
+        //JFrame ma = new JFrame();
+        
+        IG.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        Main m = new Main();
+        /*Combo c = new Combo();
+        Custom cs =new Custom();
+        Mcombo mc = new Mcombo();*/
+        
+        
+        //Component add = IG.add(c);
+        /*IG.add(cs);
+        IG.add(mc);
+        IG.add(c);*/
+        
+               
+        IG.add(m);
+        
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            @Override
+            public void run() {
+                IG.setVisible(true);
+                
+            }
+        });
+        //IG.setVisible(true);
+        IG.pack();
+       
+    }
+    
+}
